@@ -20,7 +20,7 @@ public class GuessingPi {
 			if (guess == Character.getNumericValue(pi.charAt(i))) {
 				System.out.println("Correct! You currently have: 3.14" + pi.substring(0, i + 1));
 			} else {
-				System.out.println("Sorry, that's wrong! Bye bye, liar.");
+				System.out.println("Sorry, that's wrong! The next digit is: " + Character.getNumericValue(pi.charAt(i)));
 				break;
 			}
 		}
